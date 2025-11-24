@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #306cc5ab ;
+}
+
+/*--HEADER--*/
+
+.header {
+    background-color: #306cc5ab; 
+    color: white;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 1.8em;
+    margin-right: 20px;
+}
+
+/*--MENU--*/
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 0.9em;
+    padding-bottom: 3px;
+    opacity: 0.8; 
+}
+
+.nav-menu a:hover {
+    opacity: 1;
+    border-bottom: 2px solid white;
+}
+
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*--TABELA DO CRONOGRAMA--*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/*--PALESTRANTE--*/
+
+.palestra { 
+    background-color: #e6ffe6; 
+} 
+.intervalo { 
+    background-color: #fffacd; 
+}
+.palestra2 { 
+    background-color: #e0f2ff; 
+}
+.palestra3{
+    background-color: #ddd;
+}
+
+.palestrantes-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1; 
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card .nome {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .bio {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/*--FORMULÁRIO--*/
+
+.form-section form {
+    max-width: 400px;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-section textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/*--RODAPE--*/
+
+.footer {
+    background-color: #306cc5ab; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info p, .social-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*--PAGÍNA RESPONSIVA PARA DISPOSTIVOS MÓVEIS--*/
+
+@media (max-width: 768px) {
+ 
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu {
+        margin-top: 10px;
+    }
+    
+    .nav-menu a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .menu-icon {
+        position: absolute; 
+        top: 15px;
+        right: 5%;
+    }
+
+  
+    .palestrantes-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+  
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

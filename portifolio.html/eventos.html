@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTO UDF-TEC </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <h1>EVENTO UDF-TEC</h1>
+            <nav class="nav-menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#agenda">Agenda</a>
+                <a href="#palestrantes">Palestrantes</a>
+                <a href="#inscricao">Inscrição</a>
+            </nav>
+            <div class="menu-icon">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="sobre" class="section">
+            <h2>Sobre o Evento</h2>
+            <p>O Evento UDF-TEC 2025 reunirá profissionais de tecnologia e professores da instituição para compartilhar, palestrar e fazer networking. Este é o principal encontro anual para discutir inovações, tendências de mercado e o futuro digital.</p>
+            <p><strong>Data:</strong> 15 de Novembro de 2025 | <strong>Horário:</strong> 10h às 18h | <strong>Local:</strong> Centro Universitário UDF - SEP/SUL, EQ 704/904, Conjunto A - Asa Sul, Brasília-DF</p>
+        </section>
+
+        <section id="agenda" class="section">
+            <h2>Agenda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="palestra">
+                        <td>10:30 - 11:30</td>
+                        <td>Palestra de Gleidson Porto</td>
+                    </tr>
+                    <tr class="intervalo">
+                        <td>12:00 - 13:00</td>
+                        <td>Intervalo para almoço</td>
+                    </tr>
+                    <tr class="palestra2">
+                        <td>13:15 - 14:30</td>
+                        <td>Palestra de Alex Casanãs</td>
+                    </tr>
+                    <tr class="palestra3">
+                        <td>15:00 - 16:30</td>
+                        <td>Palestra de Kadidja Valéria</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="palestrantes" class="section">
+            <h2>Palestrantes</h2>
+            <div class="palestrantes-grid">
+                
+                <div class="card">
+                    <img src="imagens/gleidson.jpg" alt="Foto de Gleidson">
+                    <p class="nome">Gleidson Porto</p>
+                    <p class="bio">Graduado em Ciência da Computação, pós-graduado em Engenharia de Software, mestre em Administração com ênfase em Gestão de TI na administração pública. Tem experiência na área de Ciência da Computação, com ênfase Engenharia de Software e Arquitetura de Sistemas de Computação na plataforma Java e Governança de TI. Professor de ensino superior há mais de 15 anos. Atuou durante 06 anos na CAPGEMINI, a maior empresa de TI européia e sétima maior do mundo, como Coordenador de Projetos de TI.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/brulex.jpg" alt="Foto de Alex Casanãs">
+                    <p class="nome">Alex Casanãs</p>
+                    <p class="bio">Com uma sólida trajetória de mais de três anos como Gerente de Tecnologia na Metaeducaverso, destaco-me pela minha inovação na interseção entre educação e tecnologia. Docência universitária e para concursos desde 1999, consultoria na área educacional, consultoria em tecnologia, palestrante, estudos da área do conhecimento em Direito Digital, gestor de projetos ágeis, habilidades em tecnologias CISCO, HP, DELL/EMC, LINUX, MICROSOFT, QUALITOR, BITRIX24 entre outras ferramentas.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/kadja.jpg" alt="Foto de Kadidja Valéria">
+                    <p class="nome">Kadidja Valéria</p>
+                    <p class="bio">Doutoranda em Ciência da Informação/UnB. Especialista em Tecnologia de Redes, em Tecnologias Educacionais em EAD (E-learning)/IFPR e em Letramento Informacional: educação para informação/UFG. Analista de Sistemas, Arquivista e Tecnóloga em Gestão Pública. Mestra em Ciência da Informação PPGCINF/UnB. Pesquisadora em Memória Institucional e Patrimônio Cultural.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="inscricao" class="section form-section">
+            <h2>Inscrição</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+
+                <button type="submit" class="submit-button">Enviar Inscrição</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Evento Tech. Todos os direitos reservados.</p>
+            <div class="contact-info">
+                <p>Contato: evento.tech@email.com</p>
+                <p>Telefone: (11) 98765-4321</p>
+            </div>
+            <div class="social-links">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
